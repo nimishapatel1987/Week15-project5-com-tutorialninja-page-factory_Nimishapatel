@@ -1,0 +1,762 @@
+<html>
+<head>
+<title>TestNG:  Login Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 13 22:22:11 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>400 seconds (400659 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialninja.testsuite.MyAccountTest.verifyThatUserRegisterAccountSuccessfully()'><b>verifyThatUserRegisterAccountSuccessfully</b><br>Test class: com.tutorialninja.testsuite.MyAccountTest<br/>
+<a href="#Output-122086708" onClick='toggleBox("Output-122086708", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-122086708" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-122086708">
+enterPassProxy element for: DefaultElementLocator 'By.id: input-password'<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserRegisterAccountSuccessfullyTue_Dec_13_22_26_12_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserRegisterAccountSuccessfullyTue_Dec_13_22_26_12_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-password&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9390a1f075dbedbe1c8d76d5f0f3998d, findElement {using=id, value=input-password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6505}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6505/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9390a1f075dbedbe1c8d76d5f0f3998d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at com.tutorialninja.utility.Utility.sendTextToElement(Utility.java:73)
+	at com.tutorialninja.page.MyAccount.enterPassword(MyAccount.java:114)
+	at com.tutorialninja.testsuite.MyAccountTest.verifyThatUserRegisterAccountSuccessfully(MyAccountTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace122086708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace122086708'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-password&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9390a1f075dbedbe1c8d76d5f0f3998d, findElement {using=id, value=input-password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6505}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6505/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9390a1f075dbedbe1c8d76d5f0f3998d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at com.tutorialninja.utility.Utility.sendTextToElement(Utility.java:73)
+	at com.tutorialninja.page.MyAccount.enterPassword(MyAccount.java:114)
+	at com.tutorialninja.testsuite.MyAccountTest.verifyThatUserRegisterAccountSuccessfully(MyAccountTest.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>60</td>
+<td>com.tutorialninja.testsuite.MyAccountTest@48aca48b</td></tr>
+<tr>
+<td title='com.tutorialninja.testsuite.MyAccountTest.verifyUserShouldNavigateToLoginPageSuccessfully()'><b>verifyUserShouldNavigateToLoginPageSuccessfully</b><br>Test class: com.tutorialninja.testsuite.MyAccountTest<br/>
+<a href="#Output-1233162869" onClick='toggleBox("Output-1233162869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1233162869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1233162869">
+varifyReturningProxy element for: DefaultElementLocator 'By.xpath: //h2[contains(text(),'Returning Customer')]'<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToLoginPageSuccessfullyTue_Dec_13_22_27_44_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToLoginPageSuccessfullyTue_Dec_13_22_27_44_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),&apos;Returning Customer&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3af9f8a4ce8f39c737bb0cc89190b6ec, findElement {using=xpath, value=//h2[contains(text(),&apos;Returning Customer&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6557/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3af9f8a4ce8f39c737bb0cc89190b6ec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at com.tutorialninja.utility.Utility.getTextFromElement(Utility.java:62)
+	at com.tutorialninja.page.MyAccount.getVerifyReturning(MyAccount.java:89)
+	at com.tutorialninja.testsuite.MyAccountTest.verifyUserShouldNavigateToLoginPageSuccessfully(MyAccountTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1233162869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1233162869'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),&apos;Returning Customer&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3af9f8a4ce8f39c737bb0cc89190b6ec, findElement {using=xpath, value=//h2[contains(text(),&apos;Returning Customer&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6557/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3af9f8a4ce8f39c737bb0cc89190b6ec
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at com.tutorialninja.utility.Utility.getTextFromElement(Utility.java:62)
+	at com.tutorialninja.page.MyAccount.getVerifyReturning(MyAccount.java:89)
+	at com.tutorialninja.testsuite.MyAccountTest.verifyUserShouldNavigateToLoginPageSuccessfully(MyAccountTest.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>60</td>
+<td>com.tutorialninja.testsuite.MyAccountTest@48aca48b</td></tr>
+<tr>
+<td title='com.tutorialninja.testsuite.HomePageTest.verifyUserShouldNavigateToComponentsPageSuccessfully()'><b>verifyUserShouldNavigateToComponentsPageSuccessfully</b><br>Test class: com.tutorialninja.testsuite.HomePageTest<br/>
+<a href="#Output-503117914" onClick='toggleBox("Output-503117914", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-503117914" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-503117914">
+verifyText2Proxy element for: DefaultElementLocator 'By.xpath: //h2[contains(text(),'Components')]'<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToComponentsPageSuccessfullyTue_Dec_13_22_23_54_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToComponentsPageSuccessfullyTue_Dec_13_22_23_54_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),&apos;Components&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27941358426252e4619a7b8b81a698bf, findElement {using=xpath, value=//h2[contains(text(),&apos;Components&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6358/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27941358426252e4619a7b8b81a698bf
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at com.tutorialninja.utility.Utility.getTextFromElement(Utility.java:62)
+	at com.tutorialninja.page.HomePage.getVerifyText2(HomePage.java:63)
+	at com.tutorialninja.testsuite.HomePageTest.verifyUserShouldNavigateToComponentsPageSuccessfully(HomePageTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503117914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503117914'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),&apos;Components&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27941358426252e4619a7b8b81a698bf, findElement {using=xpath, value=//h2[contains(text(),&apos;Components&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6358/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27941358426252e4619a7b8b81a698bf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at com.tutorialninja.utility.Utility.getTextFromElement(Utility.java:62)
+	at com.tutorialninja.page.HomePage.getVerifyText2(HomePage.java:63)
+	at com.tutorialninja.testsuite.HomePageTest.verifyUserShouldNavigateToComponentsPageSuccessfully(HomePageTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>60</td>
+<td>com.tutorialninja.testsuite.HomePageTest@29215f06</td></tr>
+<tr>
+<td title='com.tutorialninja.testsuite.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully()'><b>verifyThatUserPlaceOrderSuccessfully</b><br>Test class: com.tutorialninja.testsuite.LaptopsAndNotebooksTest<br/>
+<a href="#Output-1559261930" onClick='toggleBox("Output-1559261930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1559261930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1559261930">
+currencyLink[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //span[contains(text(),'Currency')]]<br/>
+clickOnLaptopsLink[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> link text: Laptops & Notebooks]<br/>
+clickOnAllLaptopAndNotebooksLink[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> link text: Show All Laptops & Notebooks]<br/>
+clickOnMacbookLink[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> link text: MacBook]<br/>
+getVerifyMacbook[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> link text: MacBook]<br/>
+clickOnAddToCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //button[@id='button-cart']]<br/>
+getVerifySuccess[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //div[@class='alert alert-success alert-dismissible']]<br/>
+clickOnShoppingCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //button[@id='button-cart']]<br/>
+getVerifyCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //a[contains(text(),'shopping cart')]]<br/>
+getVerifyProductMacbook[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //div[@id='content']//h1]<br/>
+clickOnUpdateCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //button[@id='button-cart']]<br/>
+getVerifyTotal[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //header/div[1]/div[1]/div[3]/div[1]/button[1]]<br/>
+clickOnCheckoutCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //header/div[1]/div[1]/div[3]/div[1]/button[1]]<br/>
+clickOnFinalCheckout[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //body[1]/header[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/p[1]/a[2]/strong[1]]<br/>
+getVerifyCheckout[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //a[contains(text(),'Checkout')]]<br/>
+clickOnGuestCheckout[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //label[text()[normalize-space()='Guest Checkout']]]<br/>
+clickOnContinueTab[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //input[@id='button-account']]<br/>
+enterNamePari[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: firstname]<br/>
+enterLastNamePatel[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: lastname]<br/>
+enterTelephone123456[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: telephone]<br/>
+enterAddressHilton Road[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: address_1]<br/>
+enterCityCambridge[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: city]<br/>
+enterPostcodeCb4 3NB[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: postcode]<br/>
+enterCountryUK[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> id: input-payment-country]<br/>
+enterStateCambridge[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //select[@id='input-payment-zone']]<br/>
+clickOnCheckout[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //input[@id='button-guest']]<br/>
+clickOnTermsProxy element for: DefaultElementLocator 'By.xpath: //input[@type='checkbox']'<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_22_25_07_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_22_25_07_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;checkbox&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71d07f8b77784550d07f53da0cfd8390, findElement {using=xpath, value=//input[@type=&apos;checkbox&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6465}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6465/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71d07f8b77784550d07f53da0cfd8390
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at com.tutorialninja.utility.Utility.clickOnElement(Utility.java:51)
+	at com.tutorialninja.page.LaptopsAndNotebooks.clickOnTerms(LaptopsAndNotebooks.java:290)
+	at com.tutorialninja.testsuite.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully(LaptopsAndNotebooksTest.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1559261930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1559261930'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;checkbox&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71d07f8b77784550d07f53da0cfd8390, findElement {using=xpath, value=//input[@type=&apos;checkbox&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6465}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6465/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71d07f8b77784550d07f53da0cfd8390
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at com.tutorialninja.utility.Utility.clickOnElement(Utility.java:51)
+	at com.tutorialninja.page.LaptopsAndNotebooks.clickOnTerms(LaptopsAndNotebooks.java:290)
+	at com.tutorialninja.testsuite.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully(LaptopsAndNotebooksTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>48</td>
+<td>com.tutorialninja.testsuite.LaptopsAndNotebooksTest@4efac082</td></tr>
+<tr>
+<td title='com.tutorialninja.testsuite.MyAccountTest.verifyUserShouldNavigateToRegisterPageSuccessfully()'><b>verifyUserShouldNavigateToRegisterPageSuccessfully</b><br>Test class: com.tutorialninja.testsuite.MyAccountTest<br/>
+<a href="#Output-905141337" onClick='toggleBox("Output-905141337", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-905141337" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-905141337">
+varifyRegisterProxy element for: DefaultElementLocator 'By.xpath: //h1[contains(text(),'Register Account')]'<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToRegisterPageSuccessfullyTue_Dec_13_22_28_50_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToRegisterPageSuccessfullyTue_Dec_13_22_28_50_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Register Account&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8c8cace6259567f6444f0874ce94069, findElement {using=xpath, value=//h1[contains(text(),&apos;Register Account&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6586}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6586/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8c8cace6259567f6444f0874ce94069
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at com.tutorialninja.utility.Utility.getTextFromElement(Utility.java:62)
+	at com.tutorialninja.page.MyAccount.getVerifyRegister(MyAccount.java:84)
+	at com.tutorialninja.testsuite.MyAccountTest.verifyUserShouldNavigateToRegisterPageSuccessfully(MyAccountTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace905141337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace905141337'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Register Account&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8c8cace6259567f6444f0874ce94069, findElement {using=xpath, value=//h1[contains(text(),&apos;Register Account&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6586}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6586/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8c8cace6259567f6444f0874ce94069
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at com.tutorialninja.utility.Utility.getTextFromElement(Utility.java:62)
+	at com.tutorialninja.page.MyAccount.getVerifyRegister(MyAccount.java:84)
+	at com.tutorialninja.testsuite.MyAccountTest.verifyUserShouldNavigateToRegisterPageSuccessfully(MyAccountTest.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>60</td>
+<td>com.tutorialninja.testsuite.MyAccountTest@48aca48b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialninja.testsuite.DesktopTest.verifyProductArrangeInAlphabeticalOrder()'><b>verifyProductArrangeInAlphabeticalOrder</b><br>Test class: com.tutorialninja.testsuite.DesktopTest<br/>
+<a href="#Output-2081312334" onClick='toggleBox("Output-2081312334", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2081312334" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2081312334">
+clickOnDesktopLink[[ChromeDriver: chrome on WINDOWS (296aa59f61f2356b4852885805a5c81b)] -> link text: Desktops]<br/>
+clickOnShowAllDeskTop[[ChromeDriver: chrome on WINDOWS (296aa59f61f2356b4852885805a5c81b)] -> xpath: //a[contains(text(),'Show All Desktops')]]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductArrangeInAlphabeticalOrderTue_Dec_13_22_22_48_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductArrangeInAlphabeticalOrderTue_Dec_13_22_22_48_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialninja.testsuite.DesktopTest@e15b7e8</td></tr>
+<tr>
+<td title='com.tutorialninja.testsuite.HomePageTest.verifyUserShouldNavigateToDesktopsPageSuccessfully()'><b>verifyUserShouldNavigateToDesktopsPageSuccessfully</b><br>Test class: com.tutorialninja.testsuite.HomePageTest<br/>
+<a href="#Output-698133256" onClick='toggleBox("Output-698133256", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-698133256" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-698133256">
+clickOnDesktopLink[[ChromeDriver: chrome on WINDOWS (352b67f9c9fd73339e7aa55bdd91f366)] -> link text: Desktops]<br/>
+verifyText[[ChromeDriver: chrome on WINDOWS (352b67f9c9fd73339e7aa55bdd91f366)] -> xpath: //h2[contains(text(),'Desktops')]]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToDesktopsPageSuccessfullyTue_Dec_13_22_24_00_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToDesktopsPageSuccessfullyTue_Dec_13_22_24_00_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialninja.testsuite.HomePageTest@29215f06</td></tr>
+<tr>
+<td title='com.tutorialninja.testsuite.HomePageTest.verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully()'><b>verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</b><br>Test class: com.tutorialninja.testsuite.HomePageTest<br/>
+<a href="#Output-826553984" onClick='toggleBox("Output-826553984", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-826553984" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-826553984">
+laptopNotebookLink[[ChromeDriver: chrome on WINDOWS (843bbf1fe49a12049e5286aeac819b43)] -> link text: Laptops & Notebooks]<br/>
+verifyText1[[ChromeDriver: chrome on WINDOWS (843bbf1fe49a12049e5286aeac819b43)] -> xpath: //h2[contains(text(),'Laptops & Notebooks')]]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfullyTue_Dec_13_22_24_06_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfullyTue_Dec_13_22_24_06_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.tutorialninja.testsuite.HomePageTest@29215f06</td></tr>
+<tr>
+<td title='com.tutorialninja.testsuite.LaptopsAndNotebooksTest.verifyProductsPriceDisplayHighToLowSuccessfully()'><b>verifyProductsPriceDisplayHighToLowSuccessfully</b><br>Test class: com.tutorialninja.testsuite.LaptopsAndNotebooksTest<br/>
+<a href="#Output-871557892" onClick='toggleBox("Output-871557892", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-871557892" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-871557892">
+clickOnLaptopsLink[[ChromeDriver: chrome on WINDOWS (d57ca7f3f89ca869173f86c065a6dbce)] -> link text: Laptops & Notebooks]<br/>
+clickOnAllLaptopAndNotebooksLink[[ChromeDriver: chrome on WINDOWS (d57ca7f3f89ca869173f86c065a6dbce)] -> link text: Show All Laptops & Notebooks]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductsPriceDisplayHighToLowSuccessfullyTue_Dec_13_22_24_13_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductsPriceDisplayHighToLowSuccessfullyTue_Dec_13_22_24_13_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tutorialninja.testsuite.LaptopsAndNotebooksTest@4efac082</td></tr>
+<tr>
+<td title='com.tutorialninja.testsuite.DesktopTest.verifyProductAddedToShoppingCartSuccessFully()'><b>verifyProductAddedToShoppingCartSuccessFully</b><br>Test class: com.tutorialninja.testsuite.DesktopTest<br/>
+<a href="#Output-1638631856" onClick='toggleBox("Output-1638631856", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1638631856" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1638631856">
+currencyLink[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //span[contains(text(),'Currency')]]<br/>
+clickOnDesktopLink[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> link text: Desktops]<br/>
+clickOnShowAllDeskTop[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //a[contains(text(),'Show All Desktops')]]<br/>
+sortByNameZtoA[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> id: input-sort]<br/>
+clickOnHpLp3065[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //a[contains(text(),'HP LP3065')]]<br/>
+verifyTextHplp3065[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //h1[contains(text(),'HP LP3065')]]<br/>
+addToCart[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //button[@id='button-cart']]<br/>
+verifyShoppingCart[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //div[@id='content']//h1]<br/>
+clickShoppingCart[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //button[@id='button-cart']]<br/>
+verifyHPlp3065[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //h1[contains(text(),'HP LP3065')]]<br/>
+verifyModel[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //li[contains(text(),'Product Code: Product 21')]]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductAddedToShoppingCartSuccessFullyTue_Dec_13_22_22_41_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductAddedToShoppingCartSuccessFullyTue_Dec_13_22_22_41_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.tutorialninja.testsuite.DesktopTest@e15b7e8</td></tr>
+<tr>
+<td title='com.tutorialninja.testsuite.MyAccountTest.verifyThatUserShouldLoginAndLogoutSuccessfully()'><b>verifyThatUserShouldLoginAndLogoutSuccessfully</b><br>Test class: com.tutorialninja.testsuite.MyAccountTest<br/>
+<a href="#Output-291143249" onClick='toggleBox("Output-291143249", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-291143249" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-291143249">
+myAccountTab[[ChromeDriver: chrome on WINDOWS (4b6749616170ff83d10d0d79f1c34bc2)] -> xpath: //span[contains(text(),'My Account')]]<br/>
+enterEmail[[ChromeDriver: chrome on WINDOWS (4b6749616170ff83d10d0d79f1c34bc2)] -> id: input-email]<br/>
+enterPass[[ChromeDriver: chrome on WINDOWS (4b6749616170ff83d10d0d79f1c34bc2)] -> id: input-password]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserShouldLoginAndLogoutSuccessfullyTue_Dec_13_22_26_38_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserShouldLoginAndLogoutSuccessfullyTue_Dec_13_22_26_38_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.tutorialninja.testsuite.MyAccountTest@48aca48b</td></tr>
+</table><p>
+</body>
+</html>

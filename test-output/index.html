@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Testsuite" class="navigator-link">
+              <span class="suite-name border-failed">Testsuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Testsuite" class="navigator-link ">
+                    <span>C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel\src\test\java\resources\runners\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Testsuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Testsuite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Testsuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Testsuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Testsuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Testsuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 5 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Testsuite" class="hide-methods failed suite-Testsuite"> (hide)</a> <!-- hide-methods failed suite-Testsuite -->
+                      <a href="#" panel-name="suite-Testsuite" class="show-methods failed suite-Testsuite"> (show)</a> <!-- show-methods failed suite-Testsuite -->
+                    </span>
+                    <div class="method-list-content failed suite-Testsuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.LaptopsAndNotebooksTest" class="method navigator-link" hash-for-method="verifyThatUserPlaceOrderSuccessfully">verifyThatUserPlaceOrderSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.MyAccountTest" class="method navigator-link" hash-for-method="verifyThatUserRegisterAccountSuccessfully">verifyThatUserRegisterAccountSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.HomePageTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToComponentsPageSuccessfully">verifyUserShouldNavigateToComponentsPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.MyAccountTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToLoginPageSuccessfully">verifyUserShouldNavigateToLoginPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.MyAccountTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToRegisterPageSuccessfully">verifyUserShouldNavigateToRegisterPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Testsuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Testsuite" class="hide-methods passed suite-Testsuite"> (hide)</a> <!-- hide-methods passed suite-Testsuite -->
+                      <a href="#" panel-name="suite-Testsuite" class="show-methods passed suite-Testsuite"> (show)</a> <!-- show-methods passed suite-Testsuite -->
+                    </span>
+                    <div class="method-list-content passed suite-Testsuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.DesktopTest" class="method navigator-link" hash-for-method="verifyProductAddedToShoppingCartSuccessFully">verifyProductAddedToShoppingCartSuccessFully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.DesktopTest" class="method navigator-link" hash-for-method="verifyProductArrangeInAlphabeticalOrder">verifyProductArrangeInAlphabeticalOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.LaptopsAndNotebooksTest" class="method navigator-link" hash-for-method="verifyProductsPriceDisplayHighToLowSuccessfully">verifyProductsPriceDisplayHighToLowSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.MyAccountTest" class="method navigator-link" hash-for-method="verifyThatUserShouldLoginAndLogoutSuccessfully">verifyThatUserShouldLoginAndLogoutSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.HomePageTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToDesktopsPageSuccessfully">verifyUserShouldNavigateToDesktopsPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testsuite" title="com.tutorialninja.testsuite.HomePageTest" class="method navigator-link" hash-for-method="verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Testsuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Testsuite" class="panel Testsuite">
+          <div class="suite-Testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tutorialninja.testsuite.MyAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserRegisterAccountSuccessfully">
+                  </a> <!-- verifyThatUserRegisterAccountSuccessfully -->
+                  <span class="method-name">verifyThatUserRegisterAccountSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-password&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9390a1f075dbedbe1c8d76d5f0f3998d, findElement {using=id, value=input-password}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6505}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6505/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9390a1f075dbedbe1c8d76d5f0f3998d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at com.tutorialninja.utility.Utility.sendTextToElement(Utility.java:73)
+	at com.tutorialninja.page.MyAccount.enterPassword(MyAccount.java:114)
+	at com.tutorialninja.testsuite.MyAccountTest.verifyThatUserRegisterAccountSuccessfully(MyAccountTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToLoginPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToLoginPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),&apos;Returning Customer&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3af9f8a4ce8f39c737bb0cc89190b6ec, findElement {using=xpath, value=//h2[contains(text(),&apos;Returning Customer&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6557/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3af9f8a4ce8f39c737bb0cc89190b6ec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at com.tutorialninja.utility.Utility.getTextFromElement(Utility.java:62)
+	at com.tutorialninja.page.MyAccount.getVerifyReturning(MyAccount.java:89)
+	at com.tutorialninja.testsuite.MyAccountTest.verifyUserShouldNavigateToLoginPageSuccessfully(MyAccountTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToRegisterPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToRegisterPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Register Account&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8c8cace6259567f6444f0874ce94069, findElement {using=xpath, value=//h1[contains(text(),&apos;Register Account&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6586}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6586/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8c8cace6259567f6444f0874ce94069
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at com.tutorialninja.utility.Utility.getTextFromElement(Utility.java:62)
+	at com.tutorialninja.page.MyAccount.getVerifyRegister(MyAccount.java:84)
+	at com.tutorialninja.testsuite.MyAccountTest.verifyUserShouldNavigateToRegisterPageSuccessfully(MyAccountTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testsuite-class-failed -->
+          <div class="suite-Testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tutorialninja.testsuite.LaptopsAndNotebooksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserPlaceOrderSuccessfully">
+                  </a> <!-- verifyThatUserPlaceOrderSuccessfully -->
+                  <span class="method-name">verifyThatUserPlaceOrderSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;checkbox&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71d07f8b77784550d07f53da0cfd8390, findElement {using=xpath, value=//input[@type=&apos;checkbox&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6465}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6465/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71d07f8b77784550d07f53da0cfd8390
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at com.tutorialninja.utility.Utility.clickOnElement(Utility.java:51)
+	at com.tutorialninja.page.LaptopsAndNotebooks.clickOnTerms(LaptopsAndNotebooks.java:290)
+	at com.tutorialninja.testsuite.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully(LaptopsAndNotebooksTest.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testsuite-class-failed -->
+          <div class="suite-Testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tutorialninja.testsuite.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToComponentsPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToComponentsPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToComponentsPageSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[contains(text(),&apos;Components&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27941358426252e4619a7b8b81a698bf, findElement {using=xpath, value=//h2[contains(text(),&apos;Components&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Nimisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6358/devtool..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27941358426252e4619a7b8b81a698bf
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at com.tutorialninja.utility.Utility.getTextFromElement(Utility.java:62)
+	at com.tutorialninja.page.HomePage.getVerifyText2(HomePage.java:63)
+	at com.tutorialninja.testsuite.HomePageTest.verifyUserShouldNavigateToComponentsPageSuccessfully(HomePageTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testsuite-class-failed -->
+          <div class="suite-Testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tutorialninja.testsuite.MyAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserShouldLoginAndLogoutSuccessfully">
+                  </a> <!-- verifyThatUserShouldLoginAndLogoutSuccessfully -->
+                  <span class="method-name">verifyThatUserShouldLoginAndLogoutSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testsuite-class-passed -->
+          <div class="suite-Testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tutorialninja.testsuite.DesktopTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductAddedToShoppingCartSuccessFully">
+                  </a> <!-- verifyProductAddedToShoppingCartSuccessFully -->
+                  <span class="method-name">verifyProductAddedToShoppingCartSuccessFully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductArrangeInAlphabeticalOrder">
+                  </a> <!-- verifyProductArrangeInAlphabeticalOrder -->
+                  <span class="method-name">verifyProductArrangeInAlphabeticalOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testsuite-class-passed -->
+          <div class="suite-Testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tutorialninja.testsuite.LaptopsAndNotebooksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductsPriceDisplayHighToLowSuccessfully">
+                  </a> <!-- verifyProductsPriceDisplayHighToLowSuccessfully -->
+                  <span class="method-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testsuite-class-passed -->
+          <div class="suite-Testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tutorialninja.testsuite.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToDesktopsPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToDesktopsPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully">
+                  </a> <!-- verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully -->
+                  <span class="method-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testsuite-class-passed -->
+        </div> <!-- panel Testsuite -->
+        <div panel-name="test-xml-Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel\src\test\java\resources\runners\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Testsuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.tutorialninja.customlisteners.CustomListeners&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tutorialninja.testsuite.DesktopTest&quot;/&gt;
+      &lt;class name=&quot;com.tutorialninja.testsuite.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.tutorialninja.testsuite.LaptopsAndNotebooksTest&quot;/&gt;
+      &lt;class name=&quot;com.tutorialninja.testsuite.MyAccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
+&lt;/suite&gt; &lt;!-- Testsuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserPlaceOrderSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserRegisterAccountSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserShouldLoginAndLogoutSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToComponentsPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyThatUserPlaceOrderSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Testsuite');
+function tableData_Testsuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyUserShouldNavigateToComponentsPageSuccessfully')
+data.setCell(0, 2, 'com.tutorialninja.testsuite.HomePageTest')
+data.setCell(0, 3, 60234);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyThatUserRegisterAccountSuccessfully')
+data.setCell(1, 2, 'com.tutorialninja.testsuite.MyAccountTest')
+data.setCell(1, 3, 60196);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUserShouldNavigateToRegisterPageSuccessfully')
+data.setCell(2, 2, 'com.tutorialninja.testsuite.MyAccountTest')
+data.setCell(2, 3, 60140);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyUserShouldNavigateToLoginPageSuccessfully')
+data.setCell(3, 2, 'com.tutorialninja.testsuite.MyAccountTest')
+data.setCell(3, 3, 60093);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyThatUserPlaceOrderSuccessfully')
+data.setCell(4, 2, 'com.tutorialninja.testsuite.LaptopsAndNotebooksTest')
+data.setCell(4, 3, 48225);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyProductAddedToShoppingCartSuccessFully')
+data.setCell(5, 2, 'com.tutorialninja.testsuite.DesktopTest')
+data.setCell(5, 3, 21148);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyThatUserShouldLoginAndLogoutSuccessfully')
+data.setCell(6, 2, 'com.tutorialninja.testsuite.MyAccountTest')
+data.setCell(6, 3, 21028);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyProductsPriceDisplayHighToLowSuccessfully')
+data.setCell(7, 2, 'com.tutorialninja.testsuite.LaptopsAndNotebooksTest')
+data.setCell(7, 3, 2123);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyProductArrangeInAlphabeticalOrder')
+data.setCell(8, 2, 'com.tutorialninja.testsuite.DesktopTest')
+data.setCell(8, 3, 2020);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyUserShouldNavigateToDesktopsPageSuccessfully')
+data.setCell(9, 2, 'com.tutorialninja.testsuite.HomePageTest')
+data.setCell(9, 3, 1133);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully')
+data.setCell(10, 2, 'com.tutorialninja.testsuite.HomePageTest')
+data.setCell(10, 3, 1116);
+window.suiteTableData['Testsuite']= { tableData: data, tableDiv: 'times-div-Testsuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Testsuite">
+              </div> <!-- times-div-Testsuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyProductArrangeInAlphabeticalOrder</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">clickOnDesktopLink[[ChromeDriver: chrome on WINDOWS (296aa59f61f2356b4852885805a5c81b)] -> link text: Desktops]</span>
+                <span class="reporter-method-output">clickOnShowAllDeskTop[[ChromeDriver: chrome on WINDOWS (296aa59f61f2356b4852885805a5c81b)] -> xpath: //a[contains(text(),'Show All Desktops')]]</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductArrangeInAlphabeticalOrderTue_Dec_13_22_22_48_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductArrangeInAlphabeticalOrderTue_Dec_13_22_22_48_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">clickOnDesktopLink[[ChromeDriver: chrome on WINDOWS (352b67f9c9fd73339e7aa55bdd91f366)] -> link text: Desktops]</span>
+                <span class="reporter-method-output">verifyText[[ChromeDriver: chrome on WINDOWS (352b67f9c9fd73339e7aa55bdd91f366)] -> xpath: //h2[contains(text(),'Desktops')]]</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToDesktopsPageSuccessfullyTue_Dec_13_22_24_00_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToDesktopsPageSuccessfullyTue_Dec_13_22_24_00_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">laptopNotebookLink[[ChromeDriver: chrome on WINDOWS (843bbf1fe49a12049e5286aeac819b43)] -> link text: Laptops & Notebooks]</span>
+                <span class="reporter-method-output">verifyText1[[ChromeDriver: chrome on WINDOWS (843bbf1fe49a12049e5286aeac819b43)] -> xpath: //h2[contains(text(),'Laptops & Notebooks')]]</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfullyTue_Dec_13_22_24_06_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfullyTue_Dec_13_22_24_06_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">clickOnLaptopsLink[[ChromeDriver: chrome on WINDOWS (d57ca7f3f89ca869173f86c065a6dbce)] -> link text: Laptops & Notebooks]</span>
+                <span class="reporter-method-output">clickOnAllLaptopAndNotebooksLink[[ChromeDriver: chrome on WINDOWS (d57ca7f3f89ca869173f86c065a6dbce)] -> link text: Show All Laptops & Notebooks]</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductsPriceDisplayHighToLowSuccessfullyTue_Dec_13_22_24_13_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductsPriceDisplayHighToLowSuccessfullyTue_Dec_13_22_24_13_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyProductAddedToShoppingCartSuccessFully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">currencyLink[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //span[contains(text(),'Currency')]]</span>
+                <span class="reporter-method-output">clickOnDesktopLink[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> link text: Desktops]</span>
+                <span class="reporter-method-output">clickOnShowAllDeskTop[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //a[contains(text(),'Show All Desktops')]]</span>
+                <span class="reporter-method-output">sortByNameZtoA[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> id: input-sort]</span>
+                <span class="reporter-method-output">clickOnHpLp3065[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //a[contains(text(),'HP LP3065')]]</span>
+                <span class="reporter-method-output">verifyTextHplp3065[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //h1[contains(text(),'HP LP3065')]]</span>
+                <span class="reporter-method-output">addToCart[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //button[@id='button-cart']]</span>
+                <span class="reporter-method-output">verifyShoppingCart[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //div[@id='content']//h1]</span>
+                <span class="reporter-method-output">clickShoppingCart[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //button[@id='button-cart']]</span>
+                <span class="reporter-method-output">verifyHPlp3065[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //h1[contains(text(),'HP LP3065')]]</span>
+                <span class="reporter-method-output">verifyModel[[ChromeDriver: chrome on WINDOWS (3a07abf382164bf52919f882f6b348e2)] -> xpath: //li[contains(text(),'Product Code: Product 21')]]</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductAddedToShoppingCartSuccessFullyTue_Dec_13_22_22_41_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyProductAddedToShoppingCartSuccessFullyTue_Dec_13_22_22_41_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyThatUserShouldLoginAndLogoutSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">myAccountTab[[ChromeDriver: chrome on WINDOWS (4b6749616170ff83d10d0d79f1c34bc2)] -> xpath: //span[contains(text(),'My Account')]]</span>
+                <span class="reporter-method-output">enterEmail[[ChromeDriver: chrome on WINDOWS (4b6749616170ff83d10d0d79f1c34bc2)] -> id: input-email]</span>
+                <span class="reporter-method-output">enterPass[[ChromeDriver: chrome on WINDOWS (4b6749616170ff83d10d0d79f1c34bc2)] -> id: input-password]</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserShouldLoginAndLogoutSuccessfullyTue_Dec_13_22_26_38_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserShouldLoginAndLogoutSuccessfullyTue_Dec_13_22_26_38_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyThatUserRegisterAccountSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">enterPassProxy element for: DefaultElementLocator 'By.id: input-password'</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserRegisterAccountSuccessfullyTue_Dec_13_22_26_12_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserRegisterAccountSuccessfullyTue_Dec_13_22_26_12_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">varifyReturningProxy element for: DefaultElementLocator 'By.xpath: //h2[contains(text(),'Returning Customer')]'</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToLoginPageSuccessfullyTue_Dec_13_22_27_44_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToLoginPageSuccessfullyTue_Dec_13_22_27_44_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToComponentsPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">verifyText2Proxy element for: DefaultElementLocator 'By.xpath: //h2[contains(text(),'Components')]'</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToComponentsPageSuccessfullyTue_Dec_13_22_23_54_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToComponentsPageSuccessfullyTue_Dec_13_22_23_54_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyThatUserPlaceOrderSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">currencyLink[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //span[contains(text(),'Currency')]]</span>
+                <span class="reporter-method-output">clickOnLaptopsLink[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> link text: Laptops & Notebooks]</span>
+                <span class="reporter-method-output">clickOnAllLaptopAndNotebooksLink[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> link text: Show All Laptops & Notebooks]</span>
+                <span class="reporter-method-output">clickOnMacbookLink[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> link text: MacBook]</span>
+                <span class="reporter-method-output">getVerifyMacbook[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> link text: MacBook]</span>
+                <span class="reporter-method-output">clickOnAddToCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //button[@id='button-cart']]</span>
+                <span class="reporter-method-output">getVerifySuccess[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //div[@class='alert alert-success alert-dismissible']]</span>
+                <span class="reporter-method-output">clickOnShoppingCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //button[@id='button-cart']]</span>
+                <span class="reporter-method-output">getVerifyCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //a[contains(text(),'shopping cart')]]</span>
+                <span class="reporter-method-output">getVerifyProductMacbook[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //div[@id='content']//h1]</span>
+                <span class="reporter-method-output">clickOnUpdateCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //button[@id='button-cart']]</span>
+                <span class="reporter-method-output">getVerifyTotal[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //header/div[1]/div[1]/div[3]/div[1]/button[1]]</span>
+                <span class="reporter-method-output">clickOnCheckoutCart[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //header/div[1]/div[1]/div[3]/div[1]/button[1]]</span>
+                <span class="reporter-method-output">clickOnFinalCheckout[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //body[1]/header[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]/div[1]/p[1]/a[2]/strong[1]]</span>
+                <span class="reporter-method-output">getVerifyCheckout[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //a[contains(text(),'Checkout')]]</span>
+                <span class="reporter-method-output">clickOnGuestCheckout[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //label[text()[normalize-space()='Guest Checkout']]]</span>
+                <span class="reporter-method-output">clickOnContinueTab[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //input[@id='button-account']]</span>
+                <span class="reporter-method-output">enterNamePari[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: firstname]</span>
+                <span class="reporter-method-output">enterLastNamePatel[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: lastname]</span>
+                <span class="reporter-method-output">enterTelephone123456[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: telephone]</span>
+                <span class="reporter-method-output">enterAddressHilton Road[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: address_1]</span>
+                <span class="reporter-method-output">enterCityCambridge[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: city]</span>
+                <span class="reporter-method-output">enterPostcodeCb4 3NB[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> name: postcode]</span>
+                <span class="reporter-method-output">enterCountryUK[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> id: input-payment-country]</span>
+                <span class="reporter-method-output">enterStateCambridge[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //select[@id='input-payment-zone']]</span>
+                <span class="reporter-method-output">clickOnCheckout[[ChromeDriver: chrome on WINDOWS (71d07f8b77784550d07f53da0cfd8390)] -> xpath: //input[@id='button-guest']]</span>
+                <span class="reporter-method-output">clickOnTermsProxy element for: DefaultElementLocator 'By.xpath: //input[@type='checkbox']'</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_22_25_07_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyThatUserPlaceOrderSuccessfullyTue_Dec_13_22_25_07_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">varifyRegisterProxy element for: DefaultElementLocator 'By.xpath: //h1[contains(text(),'Register Account')]'</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToRegisterPageSuccessfullyTue_Dec_13_22_28_50_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Nimisha\Week15-project5-com-tutorialninja-page-factory_NimishaPatel/test-output/html/verifyUserShouldNavigateToRegisterPageSuccessfullyTue_Dec_13_22_28_50_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tutorialninja.testsuite.DesktopTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">7816 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductAddedToShoppingCartSuccessFully</span>
+                <span class="method-start">7878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29622 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">30492 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">34329 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductArrangeInAlphabeticalOrder</span>
+                <span class="method-start">34338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36859 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tutorialninja.testsuite.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">37642 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">41257 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserShouldNavigateToComponentsPageSuccessfully</span>
+                <span class="method-start">41261 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">102504 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">103367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">106869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToDesktopsPageSuccessfully</span>
+                <span class="method-start">106877 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">108613 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">109401 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">112926 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</span>
+                <span class="method-start">112932 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">114806 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tutorialninja.testsuite.LaptopsAndNotebooksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">115609 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">119256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductsPriceDisplayHighToLowSuccessfully</span>
+                <span class="method-start">119259 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">121934 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">122780 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">126520 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatUserPlaceOrderSuccessfully</span>
+                <span class="method-start">126525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">175350 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tutorialninja.testsuite.MyAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">176196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">179643 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatUserRegisterAccountSuccessfully</span>
+                <span class="method-start">179646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">240885 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">241704 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">245176 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThatUserShouldLoginAndLogoutSuccessfully</span>
+                <span class="method-start">245178 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">266733 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">267525 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">271006 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserShouldNavigateToLoginPageSuccessfully</span>
+                <span class="method-start">271008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">332862 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">334068 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">337857 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserShouldNavigateToRegisterPageSuccessfully</span>
+                <span class="method-start">337859 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">398952 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
